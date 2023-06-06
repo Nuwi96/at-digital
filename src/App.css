@@ -1,0 +1,113 @@
+.navbar, .footer {
+    background-color: #6B3CC9 !important;
+    color: #FFFFFF !important;
+}
+
+.navbar-nav > li > a {
+    color: #FFFFFF !important;
+    font-size: 14px;
+}
+
+.middle-wrapper {
+    background-image: url("../src/images/background.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 893px !important;
+    /*height: 763px !important;*/
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.text-content-wrapper {
+    line-height: 48px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 47px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 22px 32px;
+    position: absolute;
+    background: linear-gradient(256.73deg, #1CBDDD 27.86%, #4DCA79 100%), #FFFFFF;
+}
+
+.btn-yellow {
+    background: #F28D35 !important;
+    color: #FFFFFF !important;
+}
+
+.btn-learn-more {
+    background: #F28D35 !important;
+    color: #FFFFFF !important;
+}
+
+h3 {
+    color: #6B3CC9 !important;
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.div-animation-left {
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-name: slideInFromLeft;
+}
+
+.div-animation-right {
+    animation: fadeInFromRight 1s ease-in-out forwards;
+}
+
+.navbar-toggler {
+    border: 1px solid white !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+/*small device*/
+/*@media (max-width: 576px) {*/
+/*    .middle-wrapper {*/
+/*        background-size: contain !important;*/
+/*        height: 593px !important;*/
+/*    }*/
+/*}@media (max-width: 768px) {*/
+/*    .middle-wrapper {*/
+/*        background-size: contain !important;*/
+/*    }*/
+/*}*/
+@media (max-width: 575.98px) { .middle-wrapper {
+    background-size: contain !important;
+    height: 593px !important;
+} }
+
+@media (max-width: 768px) { .middle-wrapper {
+    background-size: contain !important;
+    height: 593px !important;
+} }
+
+
